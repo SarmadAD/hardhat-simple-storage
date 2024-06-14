@@ -2,6 +2,8 @@ require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 require("./tasks/block-number");
 require("hardhat-gas-reporter");
+require("solidity-coverage");
+
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL ?? "";
 const PRIVATE_KEY = process.env.PRIVATE_KEY ?? "";
 const ETHERSCAN_API_KEY = process.env.EHTERSCAN_API_KEY ?? "";
